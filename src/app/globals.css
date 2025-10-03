@@ -1,0 +1,185 @@
+/* css reset by Josh W */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    interpolate-size: allow-keywords;
+  }
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+p {
+  text-wrap: pretty;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+li {
+  list-style: none;
+}
+
+/* Holy Grail */
+body {
+  padding: 0;
+  background-color: #fffffe;
+
+  background-image: url("../../public/ooorganize.svg");
+}
+
+.box {
+  border: 3px solid #272343;
+  padding: 16px;
+}
+
+main.box {
+  border-color: hsl(220deg 100% 50%);
+  background-color: hsl(220deg 100% 50% / 0.2);
+}
+
+footer.box {
+  border-color: hsl(350deg 100% 60%);
+  background-color: hsl(350deg 100% 60% / 0.2);
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.middle {
+  flex: 1;
+  display: flex;
+}
+
+aside {
+  flex: 1;
+}
+main {
+  flex: 3;
+}
+
+/* Header */
+
+header {
+  background-color: #fffffe;
+  border-color: #272343;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.nav ul {
+  display: flex;
+  gap: 2em;
+}
+
+.icons {
+  display: flex;
+  gap: 2em;
+}
+
+/* About */
+.about-box {
+  position: relative;
+  background-color: #fffffe;
+  margin-top: 2em;
+
+  border-radius: 0 1em 1em 1em;
+
+  z-index: 1;
+}
+
+.about-box h1 {
+  color: #272343;
+}
+
+.about-box p {
+  color: #2d334a;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+}
+
+.widget-about {
+  width: 120px;
+  height: 80px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #272343;
+  color: #fffffe;
+  border-top-right-radius: 20px 20px;
+  margin-bottom: -49px;
+
+  border: 3px solid #272343;
+  border-bottom: none;
+}
+
+/* Works */
+
+.work { 
+  border: 3px solid;
+  padding: 16px;
+  margin-top: 2rem;
+}
