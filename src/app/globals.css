@@ -82,11 +82,62 @@ body {
 }
 .about-section h1 {
   font-size: 7rem;
+  margin-bottom: 2rem;
 }
+
+.about-text p {
+  max-width: 75ch;
+  margin-bottom: 1em;
+}
+
+.about-text {
+  text-align: center;
+}
+
+.about-text span {
+  color: #fde24f;
+}
+
+/* misc */
 .center {
   width: 100vw;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+/* WORKS */
+
+.works-section {
+  font-size: 5rem;
+  background-image: url("/nnnoiseWhite.svg");
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.works-section .top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.works-section .top h1 {
+  margin-bottom: 6rem;
+  color: #00214d;
+}
+/* work */
+.work-section {
+  color: white;
+  width: 100vw;
+  height: 100vh;
+}
+
+.work-page {
+  display: flex;
+  flex-direction: column;
 }
