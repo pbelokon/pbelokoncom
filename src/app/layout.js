@@ -16,15 +16,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={jetBrain.className}>
-        <div className="wrapper">
-          <Header />
-          <section className="middle">
-            <aside />
-            <main className="box"> {children}</main>
-            <aside />
-          </section>
-          <footer className="box">Footer</footer>
-        </div>
+        <main>{children}</main>
       </body>
     </html>
   );
