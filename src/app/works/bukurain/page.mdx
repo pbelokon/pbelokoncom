@@ -1,0 +1,32 @@
+import MdxLayout from "@/components/mdx-layout";
+
+# BukuRain
+
+Repository links -> [Repository](https://github.com/pbelokon/BukuRain)
+
+This was my first open source project, that I had worked on in school
+and 2 people actually contributed to it!.
+
+BukuRain (Book Online) is a CLI tool written in javascript that helps you with generation of static html pages from any text file you provide.
+
+## Features
+
+- allow the user to specify a different output directory using --output or -o.
+
+- mark the first line as the title of the page, as long as first line followed by two blank lines.
+
+- markdown fenced blocks allow code blocks syntax highlighting for most programming languages.
+
+#### As of release 0.0.1 BukuRain can:
+
+- allow the user to specify a different output directory using --output or -o
+- mark the first line as the title of the page, as long as first line followed by two blank lines
+- markdown fenced blocks allow code blocks syntax highlighting for most programming languages
+
+### Tools used
+
+Node, JavaScript, GitHub, Prism, Vite-test
+
+export default function MDXPage({ children }) {
+  return <MdxLayout>{children}</MdxLayout>;
+}

@@ -1,13 +1,28 @@
 import React from "react";
 import Image from "next/image";
-const ListItem = ({ src = "/temp.jpg", w = "50", h = "50", alt = "temp" }) => {
-  return (
-    <div className="work-list-item">
-      <Image src={src} width={w} height={h} alt={alt} />
+import Link from "next/link";
 
-      <h2>Project</h2>
-      <p> Read more</p>
-    </div>
+import { Asap } from "next/font/google";
+
+const asap = Asap({
+  subsets: ["latin"],
+});
+const ListItem = ({
+  src = "/temp.jpg",
+  alt = "temp",
+  url = "/",
+  title = "Open Source Learning platform",
+}) => {
+  return (
+    <article className="work-list-item">
+      <img src={src} alt={alt} />
+      <div>
+        <h2 className={asap.className}>{title}</h2>
+        <Link href={url}>
+          <p className="btn">Read More </p>
+        </Link>
+      </div>
+    </article>
   );
 };
 
